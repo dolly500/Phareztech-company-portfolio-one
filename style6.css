@@ -1,0 +1,113 @@
+.testimonial-code .white-1{
+    margin-top: 5px;
+    transform: rotate(-3deg);
+    border-radius: 20px;
+    margin-right: 10px;
+    background: var(--secondary-gradient-40, linear-gradient(130deg, #F736C7 5.21%, #C539C4 28.13%, #903ABB 51.04%, #5938AD 75%, #039 100%));
+}
+
+.order-1 h2, .order-1 p{
+    margin-left: 16px;
+}
+
+.order-1 h3, .order-1 input, .order-1 textarea{
+    margin-left: 16px;
+}
+
+.order-1 p{
+    color: var(--primary-grey-60, #667085);
+}
+
+.testimonial-code{
+    margin-left: 10px;  
+}
+
+.hide-logo{
+    display: none;
+}
+
+.order-1 .order-0, .order-1 h3, .order-1 input{
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+.order-1 input, .order-1 textarea{
+    width: 80vw;
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid var(--primary-grey-30, #EAECF0);
+    background: #FFF;
+}
+
+.order-1 textarea{
+    margin-top: 12px;
+}
+.order-0 button{
+    width: 80vw;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--secondary-gradient-40, linear-gradient(130deg, #F736C7 5.21%, #C539C4 28.13%, #903ABB 51.04%, #5938AD 75%, #039 100%));
+    margin-left: 16px;
+    border: none;
+    margin-bottom: 16px;
+}
+
+.order-1 textarea{
+    height: 10vh;
+}
+
+@media screen and (min-width: 800px){
+    
+    .order-one{
+        border-radius: 8px;
+        background: #FFF;
+        width: 40vw;
+        margin-left: 50px;
+        padding: 20px;
+        box-shadow: 0px 24px 44px 0px rgba(20, 20, 43, 0.04);
+    }
+    .order-two{
+        border-radius: 8px;
+        background: #FFF;
+        width: 40vw;
+        margin-left: 20px;
+        padding: 20px;
+        box-shadow: 0px 24px 44px 0px rgba(20, 20, 43, 0.04);
+    }
+    .order-for-service .order .white-1{
+        width: 27vw;
+        margin-top: 20px;
+        margin-right: 75px;
+    }
+    .order-for-service{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .order-for-service .order-1 h2{
+        font-size: 33px;
+    }
+    .order-for-service .order-1 h2, .order-for-service .order-1 p{
+        margin-left: 50px;
+    }
+
+    .order-for-service .order .order-1{
+        width: 30vw;
+        margin-left: 20px;
+    }
+
+    .order-for-service .order input, .order-for-service textarea, .order-for-service button{
+        width: 30vw;
+    }
+    .shift{
+        margin-left: 30px;
+    }
+
+    .order-6{
+        margin-right: 15px;
+    }
+
+}

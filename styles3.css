@@ -1,0 +1,132 @@
+.showcase{
+    height: 45vh;
+    width: 100%;
+}
+
+/* Our Updates */
+
+.input-container {
+  position: relative;
+  margin-top: 50px;
+}
+
+.input-container input {
+    width: 70vw;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;   
+}
+
+
+.input-container button {
+  position: absolute;
+  top: 50%;
+  padding: 8px;
+  color: white;
+  background: var(--secondary-gradient-10, linear-gradient(135deg, #039 0%, #5938AD 20.67%, #903ABB 47.40%, #C539C4 73.08%, #F736C7 97.40%));;
+  width: 20vh;
+  right: 10px;
+  transform: translateY(-50%);
+  display: none; /* Hide the button by default on mobile view */
+}
+
+#my-button-id{
+    width: 70vw;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+    background: var(--secondary-gradient-10, linear-gradient(135deg, #039 0%, #5938AD 20.67%, #903ABB 47.40%, #C539C4 73.08%, #F736C7 97.40%));;
+}
+
+@media screen and (min-width: 768px) {
+    .showcase{
+        height: 37vh;
+    }
+    
+  .input-container button {
+    display: inline-block; /* Show the button on desktop view */
+  }
+  #my-button-id{
+    display: none;
+  }
+  .input-container input {
+    padding-right: 40px; /* Adjust this value to leave space for the button */
+    width: 50vh;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+/* Latest Updates */
+@media screen and (max-width: 768px){
+.lastest .hashtag{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lastest{
+    padding: 15px;
+}
+
+.lastest h3{
+    margin-left: 10px;
+}
+.hashtag button{
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    color: var(--primary-grey-60, #667085);
+    text-align: center;
+}
+
+.hashtag .all{
+    color: #fff;
+    text-align: center;
+    background: var(--secondary-gradient-40, linear-gradient(130deg, #F736C7 5.21%, #C539C4 28.13%, #903ABB 51.04%, #5938AD 75%, #039 100%));
+}
+}
+
+@media screen and (min-width: 768px){
+    .recent-update{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .lastest .hashtag{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .lastest{
+        padding: 10px;
+    }
+    
+    .lastest h3{
+        margin-left: 50px;
+    }
+    .hashtag button{
+        margin-top: 15px;
+        margin-left: 50px;
+        padding: 6.9px;
+        border-radius: 10px;
+        border: none;
+        color: var(--primary-grey-60, #667085);
+        text-align: center;
+    }
+    
+    .hashtag .all{
+        color: #fff;
+        text-align: center;
+        background: var(--secondary-gradient-40, linear-gradient(130deg, #F736C7 5.21%, #C539C4 28.13%, #903ABB 51.04%, #5938AD 75%, #039 100%));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hidden{
+        display: none;
+    }    
+}

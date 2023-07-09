@@ -1,0 +1,207 @@
+.showcase{
+    height: 40vh;
+}
+
+
+.input-container input {
+    width: 27vw;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;   
+}
+
+.header-2 p{
+    text-align: center;
+    margin-top: 20px;
+}
+/* 
+Frequently Asked questions */
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+    text-align: center;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-top: 30px;
+
+}
+.hr-line {
+  width: 40%;
+  margin: auto;
+  background: var(--primary-grey-30, #EAECF0);
+  height: 1px;
+  border: none;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #777;
+    cursor: pointer;
+    padding: 20px 20px;
+    width: 45%;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+}
+
+@media screen and (min-width: 800px){
+    .faq-body p{
+        color: #777;
+        margin-left: 370px; 
+    }
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+main{
+    margin-bottom: 30px;
+}
+
+
+/* Needed Footer */
+.needed-help{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    margin-bottom: 36px;
+  }
+  
+  .needed-help .help-1{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 24px 44px 0px rgba(20, 20, 43, 0.04);
+    margin-top: 50px;
+    text-align: center;
+  }
+  .needed-help .help-1 p{
+    text-align: center;
+    color: #98A2B3;
+  }
+  
+  .needed-help img, .needed-help h3, .needed-help p{
+    margin-top: 15px;
+    padding-bottom: 8px;
+  } 
+  .needed-help .help-1 .img-border img{
+    border: 2.5px solid #ea3ef6;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  @media screen and (min-width: 800px){
+    .needed-help{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+      margin-left: 40px;
+    }
+  
+    .needed-help .help-1{
+      width: 50vh;
+      height: 35vh;
+    }
+    .needed-help img, .needed-help h3, .needed-help p{
+      margin-top: 15px;
+      padding: 5px;
+    }
+  }
+  
+@media screen and (max-width: 768px){
+    nav ul{
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        background: #fff;
+        height: 110vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+      }
+    .need-help{
+        padding: 8px;
+    }
+    .input-container input{
+        width: 75%;
+    }
+    .faq-body p{
+        color: #777;
+    }
+    main h1{
+        font-size: 25px;
+    }
+    .faq-container .faq-one h1{
+        width: 100%;
+        font-size: 12.1px;
+    }
+    .faq-container .faq-two h1{
+        width: 100%;
+        font-size: 12.1px;
+    }
+    .faq-container .faq-three h1{
+        width: 100%;
+        font-size: 12.1px;
+    }
+    .faq-container .faq-four h1{
+        width: 100%;
+        font-size: 12.1px;
+    }
+    .faq-container .faq-five h1{
+        width: 100%;
+        font-size: 12.1px;
+    }
+
+    .faq-container .faq-six h1{
+        width: 100%;
+        font-size: 12.1px;
+    }
+    .faq-container .faq-seven h1{
+        width: 100%;
+        font-size: 12.1px;
+    }
+    .hr-line {
+        width: 90%;
+    }
+    .faq-body p{
+        font-size: 12px;
+    }
+    main{
+    margin-bottom: 30px;
+    }
+}
+
+/* Need Help */
+

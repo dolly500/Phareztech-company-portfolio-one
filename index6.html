@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phareztech-company-portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style6.css">
+    <script src="https://use.fontawesome.com/139cc83ef8.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <img src="./img/Primary logo.svg" style="height: 37px;" />
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+           <li><a style="color: #F736C7;" class="active" href="#">Home</a></li>
+           <li><a href="#">About us</a></li>
+           <li><a href="#">Products</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#"><button>Order our service</button></a></li>
+        </ul>
+     </nav>
+
+     <div class="order-for-service">
+        <div class="order">
+      <div class="order-one">
+        <div class="order-1">
+            <div><h2>It’s time to build<br> something exciting!</h2></div>
+            <div><p>We wake up everyday thinking of how <br>we can solve human problems with our users’<br> satisfaction in mind.</p></div>
+        </div>
+        <div class="testimonial-code">
+            <div class="white-1">
+               <div><img src="./img/favourite-31.svg" alt="" /></div>
+               <div><p style="color: white;">“Amet parturient non eget lectus sed urna imperdiet adipiscing vestibulum.” </p></div>
+               <div class="avatar">
+                  <div>
+                     <img src="./img/Oval.png" alt="" />
+                  </div>
+                  <div>
+                     <p style="font-weight: bolder; color: white;">Deji Raji</p>
+                     <p style="color: var(--primary-grey-40, #D0D5DD);">Co-founder, Sabitech</p>
+                  </div>
+               </div>
+            </div>
+        </div>
+      </div>
+        </div>
+
+        <div class="order">
+      <div class="order-two">
+        <div class="order-1">
+            <div class="order-6">
+                <div><h2>Get in touch today</h2></div>
+                <div><p>Please submit the following details and a<br> Phareztech representative will follow up<br> with you within 24 hours.</p></div>
+            </div>
+            <div class="shift">
+                <div class="order-0">
+                    <label for="Your name">
+                        <h3>Your name</h3>
+                        <input type="text" alt="" placeholder="Enter your full name" />
+                    </label>
+                </div>
+                <div class="order-0">
+                    <label for="Your name">
+                        <h3>Email address</h3>
+                        <input type="text" alt="" placeholder="Enter your Email address" />
+                    </label>
+                </div>
+                <div class="order-0">
+                    <label for="Your name">
+                        <h3>Project brief</h3>
+                        <textarea placeholder="Enter your project brief" alt=""></textarea>
+                    </label>
+                </div>
+                <div class="order-0">
+                    <button>Get in touch</button>
+                </div>
+            </div>
+            </div>
+      </div>
+        </div>
+        </div>
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn');
+            const logoOne = document.querySelector('.testimonial-code');
+
+            menuBtn.addEventListener('click',
+            function(){
+                logoOne.classList.toggle('hide-logo');
+                // arrowBtn.classList.toggle('hide-logo');
+            }
+            )
+        </script>
+     </body>
+     </html>
